@@ -1,5 +1,5 @@
 library(googleAuthR)
 library(googleAnalyticsR)
 options(googleAuthR.scopes.selected = "https://www.googleapis.com/auth/analytics")
-service_token <- gar_auth_service("~/Downloads/Analytics-3915e1c95f5e.json")
+service_token <- gar_auth_service("~/Downloads/client_id.json")
 google_analytics("189650271", date_range = c("2daysAgo","today"), metrics = "sessions")
